@@ -11,12 +11,13 @@
   },
   {
     "name": "Rinkeby",
-    "address": "https://faucet.rinkeby.io/"
+    "address": "https://faucet.rinkeby.io/",
+    "image": "/images/eth.png"
   },
   {
     "name": "Goerli ",
     "address": "https://goerli-faucet.mudit.blog/",
-    "image": "/images/goerli.png"
+    "image": "/images/eth.png"
   },
   {
     "name": "BSC",
@@ -55,11 +56,13 @@
   },
   {
     "name": "Kovan",
-    "address": "https://gitter.im/kovan-testnet/faucet"
+    "address": "https://gitter.im/kovan-testnet/faucet",
+    "image": "/images/eth.png"
   },
   {
     "name": "Ropsten",
-    "address": "https://faucet.egorfine.com"
+    "address": "https://faucet.egorfine.com",
+    "image": "/images/eth.png"
   },
   {
     "name": "xDAI",
