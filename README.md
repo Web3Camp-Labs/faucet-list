@@ -1,4 +1,4 @@
-#FAUCET 
+# FAUCET 
 Token faucet web app various tokens.
 
 ## Getting Started
