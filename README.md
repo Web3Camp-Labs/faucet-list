@@ -1,5 +1,5 @@
 # FAUCET 
-Token faucet web app various tokens.
+Token faucet web app for various tokens.
 
 ## Getting Started
 
