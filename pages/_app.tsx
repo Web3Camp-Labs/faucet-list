@@ -20,8 +20,8 @@ function MyApp({ Component, pageProps }: IAppProps) {
   const getLayout = Component.getLayout ?? ((page: ReactNode) => page)
   return  <>
     <Head>
-      <title>ETH WALLET GENERATOR</title>
-      <meta name="description" content="Generate ETH Wallet Address in pure webpage from scratch!" />
+      <title>FAUCET LIST</title>
+      <meta name="description" content="FAUCET LIST" />
       <link rel="icon" href="./favicon.ico" />
     </Head>
     {getLayout(<Component {...pageProps} />)}
