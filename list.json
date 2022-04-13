@@ -1,0 +1,69 @@
+[
+  {
+    "name": "BTC",
+    "address": "https://coinfaucet.eu/en/btc-testnet/",
+    "image": "/images/btc.svg.png"
+  },
+  {
+    "name": "BCH",
+    "address": "https://coinfaucet.eu/en/bch-testnet/",
+    "image": "/images/bch.png"
+  },
+  {
+    "name": "Rinkeby",
+    "address": "https://faucet.rinkeby.io/"
+  },
+  {
+    "name": "Goerli ",
+    "address": "https://goerli-faucet.mudit.blog/",
+    "image": "/images/goerli.png"
+  },
+  {
+    "name": "BSC",
+    "address": "https://testnet.binance.org/faucet-smart",
+    "image": "/images/bsc.png"
+  },
+  {
+    "name": "Polygon（Matic）",
+    "address": "https://faucet.polygon.technology/",
+    "image": "/images/polygon.jpeg"
+  },
+  {
+    "name": "Avalanche",
+    "address": "https://faucet.avax-test.network/",
+    "image": "/images/Avalanche.png"
+  },
+  {
+    "name": "Fantom",
+    "address": "https://faucet.fantom.network/",
+    "image": "/images/FTM.png"
+  },
+  {
+    "name": "Harmony",
+    "address": "https://faucet.pops.one/",
+    "image": "/images/Harmony.png"
+  },
+  {
+    "name": "HECO",
+    "address": "https://scan-testnet.hecochain.com/faucet",
+    "image": "/images/heco.png"
+  },
+  {
+    "name": "Aurora",
+    "address": "https://aurora.dev/faucet",
+    "image": "/images/aoa.png"
+  },
+  {
+    "name": "Kovan",
+    "address": "https://gitter.im/kovan-testnet/faucet"
+  },
+  {
+    "name": "Ropsten",
+    "address": "https://faucet.egorfine.com"
+  },
+  {
+    "name": "xDAI",
+    "address": "https://xdai-faucet.top/",
+    "image": "/images/xdai.png"
+  }
+]
