@@ -31,14 +31,15 @@ const ListBox = styled.div`
 
 
 interface objProps{
-    name: String
-    address: String
+    name: string
+    address: string
+    image?: string
 }
 
 export default function  Home<NextPage>() {
     const [list,setList] = useState<objProps[]>([]);
     useEffect(()=>{
-        const compareDESC = function (obj1, obj2) {
+        const compareDESC = function (obj1:objProps, obj2:objProps) {
             const val1 = obj1.name;
             const val2 = obj2.name;
             if (val1 < val2) {
@@ -53,8 +54,7 @@ export default function  Home<NextPage>() {
         setList(arr)
     },[])
 
-  return (
-      <ListBox>
+  return (<ListBox>
           <ul>
               {
                   list.map((item,index)=>(<li key={index}>
@@ -72,16 +72,15 @@ export default function  Home<NextPage>() {
 }
 
 
-
 interface LayoutProps {
-  children: ReactNode;
+    children: ReactNode;
 }
 
 
 Home.getLayout = function getLayout(page:LayoutProps) {
-  return (
-      <Layout>
-        {page}
-      </Layout>
-  )
+    return (
+        <Layout>
+            {page}
+        </Layout>
+    )
 }

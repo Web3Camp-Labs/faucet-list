@@ -1,4 +1,4 @@
-import React,{ ReactNode } from 'react'
+import React,{ ReactNode,ReactElement } from 'react'
 import HeaderTop from "./headTop";
 import styled from "styled-components";
 import {Container, Row, Col, Card} from 'react-bootstrap';
@@ -25,10 +25,10 @@ const CardBox = styled(Card)`
 `
 
 interface LayoutProps {
-    children: ReactNode;
+    children: any;
 }
 
-export default function  Layout<FC>({ children}: LayoutProps ) {
+export default function  Layout<FC>({ children }: LayoutProps ) {
     return <MainContent>
             <HeaderTop />
             <MainBox>
