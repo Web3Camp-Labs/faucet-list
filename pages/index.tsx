@@ -7,9 +7,17 @@ import faucetList from '../public/list.json';
 
 const ListBox = styled.div`
   ul{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    //display: flex;
+    //justify-content: space-between;
+    //flex-wrap: wrap;
+    &:after{
+      clear:both;
+      display: block;
+      content:'';
+      width:0;
+      height:0;
+      visibility:hidden;
+    }
   }
   li{
     border: 1px solid #eee;
@@ -17,6 +25,11 @@ const ListBox = styled.div`
     margin-bottom: 20px;
     text-align: center;
     padding: 40px 0 20px;
+    float:left;
+    margin-right: 1.3%;
+    &:nth-child(4n){
+      margin-right: 0;
+    }
   }
   .title{
     padding: 20px;
