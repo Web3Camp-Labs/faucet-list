@@ -1,5 +1,6 @@
-import React, {ReactNode, useEffect, useState, useRef, ChangeEvent, ReactElement, ComponentType} from "react";
+import React, {ReactNode, useEffect, useState} from "react";
 import styled from "styled-components";
+import {Button} from "react-bootstrap"
 
 import Layout from "./layout/layout";
 import faucetList from '../public/list.json';
@@ -28,6 +29,10 @@ const ListBox = styled.div`
     border-radius: 100px;
   }
 `
+const ButtonBox = styled.div`
+    padding: 20px 0;
+    text-align: right;
+`
 
 
 interface objProps{
@@ -54,7 +59,11 @@ export default function  Home<NextPage>() {
         setList(arr)
     },[])
 
-  return (<ListBox>
+  return (<>
+          <ButtonBox>
+              <a href="https://github.com/Web3-Camp/faucet-list/issues/new" target="_blank" rel="noreferrer"><Button variant="flat">Add New Faucet</Button></a>
+          </ButtonBox>
+          <ListBox>
           <ul>
               {
                   list.map((item,index)=>(<li key={index}>
@@ -68,6 +77,7 @@ export default function  Home<NextPage>() {
               }
           </ul>
       </ListBox>
+      </>
   )
 }
 
