@@ -60,7 +60,7 @@ export default function  Home<NextPage>() {
                   list.map((item,index)=>(<li key={index}>
                       <a href={item.address} target="_blank" rel="noreferrer">
                       <div>
-                          <img src={item.image} alt=""/>
+                          <img src={`/faucet-list${item.image}`} alt=""/>
                       </div>
                       <div className="title">{item.name}</div>
                     </a>
