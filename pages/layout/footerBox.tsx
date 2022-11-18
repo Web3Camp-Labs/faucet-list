@@ -3,7 +3,7 @@ import {Container} from 'react-bootstrap';
 const Footer = styled.div`
   height: 80px;
   margin-top: 60px;
-  width: 100vw;
+  width: 100%;
   .midBox{
     display: flex;
     justify-content: space-between;
