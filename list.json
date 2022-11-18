@@ -68,5 +68,10 @@
     "name": "xDAI",
     "address": "https://xdai-faucet.top/",
     "image": "/images/xdai.png"
+  },
+  {
+    "name": "Volta",
+    "address": "https://voltafaucet.energyweb.org/",
+    "image": "/images/volta.svg"
   }
 ]
