@@ -20,31 +20,39 @@ const ListBox = styled.div`
     }
   }
   li{
-    border: 1px solid #eee;
-    width: 24%;
-    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 22%;
+    margin-bottom: 40px;
     text-align: center;
     padding: 40px 0 20px;
     float:left;
-    margin-right: 1.3%;
+    margin-right: 4%;
+    //background: #ff0;
     &:nth-child(4n){
       margin-right: 0;
     }
+    &:hover{
+        box-shadow: 0px 20px 40px 0px #F7F7F7;
+        border-radius: 20px;
+        border: 2px solid #EDEFF0;
+    }
   }
   .title{
-    padding: 20px;
+    //padding: 20px;
     margin-right: 20px;
     text-align: center;
+    font-size: 22px;
+    font-family: "Helvetica";
+    color: #2D1D0A;
+    line-height: 31px;
+    margin-top: 20px;
   }
   img{
-    width: 100px;
-    height: 100px;
+    width: 96px;
+    height: 96px;
     border-radius: 100px;
   }
-`
-const ButtonBox = styled.div`
-    padding: 20px 0;
-    text-align: right;
 `
 
 
@@ -73,9 +81,7 @@ export default function  Home<NextPage>() {
     },[])
 
   return (<>
-          <ButtonBox>
-              <a href="https://github.com/Web3-Camp/faucet-list/issues/new" target="_blank" rel="noreferrer"><Button variant="flat">Add New Faucet</Button></a>
-          </ButtonBox>
+
           <ListBox>
           <ul>
               {

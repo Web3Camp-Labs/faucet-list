@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: IAppProps) {
       <link rel="icon" href="./favicon.ico" />
     </Head>
     {getLayout(<Component {...pageProps} />)}
-    <link rel="stylesheet" href="https://web3camp.us/globals.css"/>
+    <link rel="stylesheet" href="./globals.css"/>
   </>
 }
 
