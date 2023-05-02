@@ -166,7 +166,7 @@ export default function  Home<NextPage>() {
                   ResultJson.map((item,index)=>(
                       <li key={`rt_${index}`}>
                           <FlexLine>
-                              <img src={item.image?item.image:"/images/eth.png"} alt=""/>
+                              <img src={item.image?'/faucet-list'+item.image:"'/faucet-list/images/eth.png"} alt=""/>
                               <div className="nameRht">
                                   <span>{item.name}</span>
                                   {
