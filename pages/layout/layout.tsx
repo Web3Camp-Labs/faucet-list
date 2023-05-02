@@ -86,7 +86,7 @@ export default function  Layout<FC>({ children }: LayoutProps ) {
     const [account,setAccount] = useState();
 
     const getAccount = async () =>{
-        const { ethereum } = window;
+        const { ethereum } = window as any;
         if (typeof ethereum == 'undefined') {
             return {
                 type: 'error'

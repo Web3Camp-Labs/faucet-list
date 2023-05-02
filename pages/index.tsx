@@ -134,13 +134,13 @@ export default function  Home<NextPage>() {
         setList(arr)
     },[])
 
-    const switchStr = (str) =>{
+    const switchStr = (str:string) =>{
         let domain = str?.split("://")[1];
         let aft1 = domain?.split("/")[0];
         let aft = aft1?.split("?")[0];
         return aft;
     }
-    const formatLink = (str) =>{
+    const formatLink = (str:string) =>{
         if(account){
            return  str.replace("${ADDRESS}",account);
         }
@@ -170,7 +170,7 @@ export default function  Home<NextPage>() {
                               <div className="nameRht">
                                   <span>{item.name}</span>
                                   {
-                                      !!index &&<span className="sym">{item.nativeCurrency.symbol}</span>
+                                      !!index &&<span className="sym">{item!.nativeCurrency?.symbol}</span>
                                   }
 
                               </div>
