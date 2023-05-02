@@ -1,37 +1,41 @@
 import React, {ReactNode, useEffect, useState} from "react";
 import styled from "styled-components";
-import {Button} from "react-bootstrap"
+import {Button} from "react-bootstrap";
 
 import Layout from "./layout/layout";
 import faucetList from '../public/list.json';
+import ResultJson from "../public/result.json";
+
 
 const ListBox = styled.div`
   ul{
-    //display: flex;
-    //justify-content: space-between;
-    //flex-wrap: wrap;
-    &:after{
-      clear:both;
-      display: block;
-      content:'';
-      width:0;
-      height:0;
-      visibility:hidden;
-    }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    //&:after{
+    //  clear:both;
+    //  display: block;
+    //  content:'';
+    //  width:0;
+    //  height:0;
+    //  visibility:hidden;
+    //}
   }
   li{
-    border: 2px solid #fff;
+    border: 2px solid #EDEFF0;
+    background: #fff;
     border-radius: 20px;
-    width: 22%;
+    width: 32%;
     margin-bottom: 40px;
     text-align: center;
-    padding: 40px 0 20px;
-    float:left;
-    margin-right: 4%;
+    padding:20px 20px 0;
+    //float:left;
+    box-sizing: border-box;
+    //margin-right: 4%;
     //background: #ff0;
-    &:nth-child(4n){
-      margin-right: 0;
-    }
+    //&:nth-child(4n){
+    //  margin-right: 0;
+    //}
     &:hover{
         box-shadow: 0px 20px 40px 0px #F7F7F7;
         border-radius: 20px;
@@ -48,11 +52,52 @@ const ListBox = styled.div`
     line-height: 31px;
     margin-top: 20px;
   }
+  //img{
+  //  width: 96px;
+  //  height: 96px;
+  //  border-radius: 100px;
+  //}
+`
+
+const FlexLine  = styled.div`
+    display: flex;
+  align-items: center;
   img{
-    width: 96px;
-    height: 96px;
-    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
   }
+  .nameRht{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .sym{
+    opacity: 0.6;
+  }
+`
+
+const BtmUl = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding-top: 20px;
+    div{
+      border: 1px solid rgba(0,0,0,0.1);
+      background: #f8f8f8;
+      border-radius: 5px;
+      width: 100%;
+      text-align: left;
+      padding: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &:hover{
+        color: #000;
+      }
+    }
 `
 
 
@@ -64,6 +109,14 @@ interface objProps{
 
 export default function  Home<NextPage>() {
     const [list,setList] = useState<objProps[]>([]);
+    const [account,setAccount] = useState('');
+
+    useEffect(()=>{
+        let acc = sessionStorage.getItem('account');
+        setAccount(acc)
+    },[])
+
+
     useEffect(()=>{
         const compareDESC = function (obj1:objProps, obj2:objProps) {
             const val1 = obj1.name;
@@ -80,19 +133,56 @@ export default function  Home<NextPage>() {
         setList(arr)
     },[])
 
+    const switchStr = (str) =>{
+        let domain = str?.split("://")[1];
+        let aft1 = domain?.split("/")[0];
+        let aft = aft1?.split("?")[0];
+        return aft;
+    }
+    const formatLink = (str) =>{
+        if(account){
+           return  str.replace("${ADDRESS}",account);
+        }
+        return str;
+
+    }
+
   return (<>
 
           <ListBox>
           <ul>
+              {/*{*/}
+              {/*    list.map((item,index)=>(<li key={index}>*/}
+              {/*        <a href={item.address} target="_blank" rel="noreferrer">*/}
+              {/*        <div>*/}
+              {/*            <img src={`/faucet-list${item.image}`} alt=""/>*/}
+              {/*        </div>*/}
+              {/*        <div className="title">{item.name}</div>*/}
+              {/*      </a>*/}
+              {/*    </li>))*/}
+              {/*}*/}
               {
-                  list.map((item,index)=>(<li key={index}>
-                      <a href={item.address} target="_blank" rel="noreferrer">
-                      <div>
-                          <img src={`/faucet-list${item.image}`} alt=""/>
-                      </div>
-                      <div className="title">{item.name}</div>
-                    </a>
-                  </li>))
+                  ResultJson.map((item,index)=>(
+                      <li key={`rt_${index}`}>
+                          <FlexLine>
+                              <img src={item.image?item.image:"/images/eth.png"} alt=""/>
+                              <div className="nameRht">
+                                  <span>{item.name}</span>
+                                  {
+                                      !!index &&<span className="sym">{item.nativeCurrency.symbol}</span>
+                                  }
+
+                              </div>
+                          </FlexLine>
+
+                          <BtmUl>
+                              {
+                                  item.faucets.map((innerItem,index)=>(<div key={`innerItem_${index}`}><a href={formatLink(innerItem)} target="_blank" rel="noreferrer">{switchStr(innerItem)}</a></div>))
+                              }
+                          </BtmUl>
+
+                      </li>
+                  ))
               }
           </ul>
       </ListBox>
