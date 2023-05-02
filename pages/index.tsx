@@ -113,6 +113,7 @@ export default function  Home<NextPage>() {
 
     useEffect(()=>{
         let acc = sessionStorage.getItem('account');
+        if(!acc)return;
         setAccount(acc)
     },[])
 
