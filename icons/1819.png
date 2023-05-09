@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><title data-react-helmet="true"></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Cube Network</title>
+    <meta name="keywords" content="Cube,Web3.0,Metaverse,NFT,DeFi,GameFi">
+    <meta name="description" content="Cube is a high-performance, Layer 1 blockchain with breakthrough modular architecture that is compatible with the EVM and Cosmos ecosystem. Cube brings you the multichain future and boundless  inter operability through its multichain frame work and Web 3.0 infrastructure.Cube Network has various technical features designed specially for Metaverse, NFT and GameFi. We encourage all Dapps developers to deploy on Cube and build Web 3.0 future together.">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTJ311MHZG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-TTJ311MHZG");
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="/umi.dcce5a6c.css">
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.36
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+	<script>
+  window.g_useSSR = true;
+  window.g_initialProps = {};
+	</script>
+
+    <script src="/umi.60962f89.js"></script>
+  
+
+</body></html>
