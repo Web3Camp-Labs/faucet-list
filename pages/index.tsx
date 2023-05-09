@@ -153,9 +153,9 @@ export default function  Home<NextPage>() {
         const rt = ImageArr.filter((item)=>item.split(".")[0] === num.toString() )
         console.log(rt)
         if(rt.length){
-            return `/icons/${rt[0]}`
+            return `/faucet-list/icons/${rt[0]}`
         }else{
-            return "/images/eth.png"
+            return "/faucet-list/images/eth.png"
         }
 
     }
