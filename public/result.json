@@ -1,9 +1,5 @@
 [
-    {
-        "name": "BTC",
-        "faucets": ["https://coinfaucet.eu/en/btc-testnet/"],
-        "image": "/images/btc.svg.png"
-    },
+ 
     {
         "name": "Ropsten",
         "title": "Ethereum Testnet Ropsten",

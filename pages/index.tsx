@@ -5,6 +5,7 @@ import {Button} from "react-bootstrap";
 import Layout from "./layout/layout";
 import faucetList from '../public/list.json';
 import ResultJson from "../public/result.json";
+import ImageArr from "../public/icons/imageArr.json";
 
 
 const ListBox = styled.div`
@@ -147,6 +148,17 @@ export default function  Home<NextPage>() {
         return str;
 
     }
+    const formatImg = (num:number) =>{
+        console.log(num)
+        const rt = ImageArr.filter((item)=>item.split(".")[0] === num.toString() )
+        console.log(rt)
+        if(rt.length){
+            return `/icons/${rt[0]}`
+        }else{
+            return "/images/eth.png"
+        }
+
+    }
 
   return (<>
 
@@ -166,7 +178,9 @@ export default function  Home<NextPage>() {
                   ResultJson.map((item,index)=>(
                       <li key={`rt_${index}`}>
                           <FlexLine>
-                              <img src={item.image?'/faucet-list'+item.image:"/faucet-list/images/eth.png"} alt=""/>
+                              {/*<img src={item.image?'/faucet-list'+item.image:"/faucet-list/images/eth.png"} alt=""/>*/}
+                              <img src={formatImg(item.chainId)} alt=""/>
+                              {/*{item.chainId}*/}
                               <div className="nameRht">
                                   <span>{item.name}</span>
                                   {

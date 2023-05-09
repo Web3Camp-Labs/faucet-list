@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="landing" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/logotype.png" />
+    <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/landing.css?r=1" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>TMY chain</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png">
+    <link rel="manifest" href="/images/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="bg-pattern">
+
+    <div class="responsive_menu">
+       <div class="responsive_menu-top">
+       <a href="javascript:;" class="walletLogoEl">
+           <img src="/images/landing/wallet-logo.svg" alt="">
+           /:Menu
+       </a>
+
+       <div class="d-flex align-items-center">
+       <label for="searchNav" class="searchInput MainNavbar__search">
+           <svg class="iconEl search-icon MainNavbar__searchBtn">
+               <use xlink:href="/images/landing/sprite.svg#search"></use>
+           </svg>
+           <input type="text" id="searchNav" placeholder="Type a query...">
+       </label>
+
+       <a href="javascript:;" class="closeBtn" role="button"><i class="menu-icon"></i></a>
+       </div>
+       </div>
+
+       
+
+
+      <nav class="MainNavbar">
+                    <ul>
+                        <li class="dropdown-element">
+                            <a href="#">Company</a>
+                            <ul>
+                                <li><a target='_blank' href="https://drive.google.com/drive/folders/1_0JFxV1FSWDvAVZlmlA50nAFDgZsIyLN?usp=sharing ">Documents</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a target='_blank' href="https://tmyscan.com">Scanner</a></li>
+                        <li><a href="https://wallet.tmychain.org">Wallet</a></li>
+                    </ul>
+      </nav>
+
+
+       <div class="dropdown-element dropdown-element-lang">
+           <a href="javascript:;"> <span class="lang-icon"><img src="images/landing/lang.png" alt=""></span> in English</a>
+                        <ul>
+               <li><a href="?lang=en">in English</a></li>
+               <li><a href="?lang=ru">на русском</a></li>
+           </ul>
+       </div>
+
+       <div class="rp-menu-buttons justify-content-between mt-5">
+           <a href="https://wallet.tmychain.org" class="btnEl" role="button">Enter the Wallet</a>
+       </div>
+
+    </div>
+
+    <div class="main-wrapper container" id="top">
+        <div class="header-section">
+            <div class="header-section_top-area d-lg-flex justify-content-between align-items-center">
+                <div class="top_links">
+                    <a target='_blank' href="https://drive.google.com/drive/folders/1GIoPptJBGJTx7k3mIbg1_xPZFE_Rxr6q?usp=sharing" class="a-ctiveTopNav">LitePaper</a>
+                    <a target='_blank' href='https://drive.google.com/drive/folders/1qOw_LuQYtApAFsZXvhnVqvABDasCJcPX?usp=sharing'>Tokenomics</a>
+                </div>
+                <div class="top_marketInfo-toolbar d-flex align-items-center">
+                    <!--<div class="top_marketInfo_item mr19">Капитализация: <span>170$ или 11 220₽</span></div>
+                    <div class="top_marketInfo_item mr57">Капитализация: <span>170$ или 11 220₽</span></div>-->
+                    <div class="dropdown-element dropdown-element-lang">
+                        <a href="javascript:;"> <span class="lang-icon"><img src="images/landing/lang.png" alt=""></span> in English</a>
+                        <ul>
+                            <li><a href="?lang=en">English</a></li>
+                            <li><a href="?lang=ru">Русский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-section_top-navbar d-flex justify-content-between align-items-center">
+                <a href="/" class="walletLogoEl">
+                    <img src="/images/landing/wallet-logo.svg" alt="">
+                    /:Chain
+                </a>
+                <nav class="MainNavbar">
+                    <ul class="d-flex justify-content-between">
+                        <li class="dropdown-element">
+                            <a href="#">Company</a>
+                            <ul>
+                                <li><a target='_blank' href="https://drive.google.com/drive/folders/1_0JFxV1FSWDvAVZlmlA50nAFDgZsIyLN?usp=sharing ">Documents</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a target='_blank' href="https://tmyscan.com">Scanner</a></li>
+                        <li><a href="https://wallet.tmychain.org">Wallet</a></li>
+                    </ul>
+                </nav>
+                <a href="javascript:;" class="d-lg-none d-flex rp-menu-btn"><i class="menu-icon"></i></a>
+                <div class="d-lg-flex d-none align-items-center">
+                    <label for="searchNav" class="searchInput MainNavbar__search">
+                        <svg class="iconEl search-icon MainNavbar__searchBtn">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                        <input type="text" id="searchNav" placeholder="Type a query...">
+                    </label>
+                    <a href="https://wallet.tmychain.org" class="btnEl btnEl-gray" role="button">
+                    Enter <span class="d-lg-inline-block d-none">in Wallet</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="intro--area d-flex justify-content-lg-between align-items-xl-start align-items-center flex-lg-row flex-column-reverse">
+            <div class="intro--area--tg">
+                <h1 class="title-el mb25">TMY Chain</h1>
+                <p class="caption-el mb25">Blockchain is an open source platform for creating cryptocurrencies and decentralized applications. Transaction fees on the TMY Chain are paid in TMY coin.</p>
+                <div class="d-flex">
+                    <a href="https://wallet.tmychain.org" class="btnEl d-lg-inline-block d-none mr-5" role="button">
+                    Enter the Wallet TMY                    </a>
+                </div>
+            </div>
+            <img src="images/landing/intro-img.png" class="tmy-img" alt="">
+        </div>
+        <div class="tmy-stat-box">
+            <div class="tmy-stat-box-heading">
+            STABLE CRYPTOCURRENCY IN A NEW GENERATION ECOSYSTEM                <img src="images/landing/boxImage.jpg" alt="">
+            </div>
+            <div class="tmy-stat-boxes swiper">
+                <div class="swiper-wrapper">
+                    
+                <div class="swiper-slide">
+                        <div class="tmy-stat-boxes_item">
+                            <div class="tmy-stat-boxes_item_name">top block</div>
+                            <div id='stats-blockHash' class="tmy-stat-boxes_item_val">100</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tmy-stat-boxes_item">
+                            <div class="tmy-stat-boxes_item_name">transactions</div>
+                            <div id='stats-tx' class="tmy-stat-boxes_item_val">560 000 856 965</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tmy-stat-boxes_item">
+                            <div class="tmy-stat-boxes_item_name">blocks</div>
+                            <div id='stats-blocknum' class="tmy-stat-boxes_item_val">54 543 511</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tmy-stat-boxes_item">
+                            <div class="tmy-stat-boxes_item_name">gas price</div>
+                            <div class="tmy-stat-boxes_item_val">1 GWEI</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sc-content pattern-pseudo mb-0" id="newsArea">
+            <div class="d-flex align-items-center mb25">
+                <div class="d-flex align-items-center pattern-title pattern-title-left control-heading flex-shrink-0">
+                    <div class="title-el mr-md-5">
+                    NEWS <a name='news'></a>
+                    </div>
+                    <div class="contrls">
+                        <div class="cstm-control-btn btnEl cstm-control-btn-prev"><svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 4.5L1 4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.5 1L1 4.5L4.5 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg> </div>
+                        <div class="cstm-control-btn btnEl cstm-control-btn-next"><svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4.5H14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.5 8L14 4.5L10.5 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg> </div>
+                    </div>
+
+                    <svg width="656" height="50" class="pattern-svg" viewBox="0 0 656 50" fill="none" xmlns="http://www.w3.org/2000/svg"> <mask id="mask0_911_4061" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="656" height="50"> <rect width="656" height="50" fill="#D9D9D9"/> </mask> <g mask="url(#mask0_911_4061)"> <rect x="7.09375" y="0.265137" width="60.1927" height="10.0321" transform="rotate(45 7.09375 0.265137)" fill="#F7F8FC"/> <rect x="120.969" y="7.36084" width="60.1927" height="10.0321" transform="rotate(135 120.969 7.36084)" fill="#F7F8FC"/> <rect x="42.751" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 42.751 0.266113)" fill="#F7F8FC"/> <rect x="156.625" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 156.625 7.36035)" fill="#F7F8FC"/> <rect x="185.376" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 185.376 0.266113)" fill="#F7F8FC"/> <rect x="192.281" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 192.281 7.36035)" fill="#F7F8FC"/> <rect x="221.031" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 221.031 0.265625)" fill="#F7F8FC"/> <rect x="334.912" y="7.35986" width="60.1927" height="10.0321" transform="rotate(135 334.912 7.35986)" fill="#F7F8FC"/> <rect x="256.692" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 256.692 0.265625)" fill="#F7F8FC"/> <rect x="370.563" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 370.563 7.36035)" fill="#F7F8FC"/> <rect x="399.313" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 399.313 0.265625)" fill="#F7F8FC"/> <rect x="406.221" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 406.221 7.33936)" fill="#F7F8FC"/> <rect x="434.97" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 434.97 0.245117)" fill="#F7F8FC"/> <rect x="548.845" y="7.33887" width="60.1927" height="10.0321" transform="rotate(135 548.845 7.33887)" fill="#F7F8FC"/> <rect x="470.626" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 470.626 0.245117)" fill="#F7F8FC"/> <rect x="584.501" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 584.501 7.33936)" fill="#F7F8FC"/> <rect x="613.251" y="-0.108887" width="60.1927" height="10.0321" transform="rotate(45 613.251 -0.108887)" fill="#F7F8FC"/> <rect x="620.157" y="6.98389" width="60.1927" height="10.0321" transform="rotate(135 620.157 6.98389)" fill="#F7F8FC"/> </g> </svg>
+
+                </div>
+            </div>
+            <div class="tmy-news-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="news--box">
+                            <div class="news--box--user">
+                                <div class="news--box--user--avatar">
+                                    <img src="https://drive.google.com/u/0/uc?id=1Ek6OX4y3NkuD7B1xTyM7YdUgOWW9u9Xn&export=download" alt="">
+                                </div>
+                                <div class="news--box--user--meta">
+                                    <div class="news--box--user--meta_name">Freedman Club</div>
+                                    <div class="news--box--user--meta_date">30/06/2022</div>
+                                </div>
+                            </div>
+                            <div class="news--box--user--text">
+                            How to conduct research on a cryptoproject: using the example of the TMY Chain blockchain                            </div>
+                            <a target='_blank' href="https://freedmanclub.com/kak-provesti-issledovani-ye-cryptoproyekta-na-primere-startapa-tmy-chain" class="btnEl d-inline-flex" role="button">
+                            More detailed                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news--box">
+                            <div class="news--box--user">
+                                <div class="news--box--user--avatar">
+                                    <img src="https://drive.google.com/u/0/uc?id=1mzTpjLL8gJNusRca3jvjfeRM9aGjSm8w&export=download" alt="">
+                                </div>
+                                <div class="news--box--user--meta">
+                                    <div class="news--box--user--meta_name">BitNovosti</div>
+                                    <div class="news--box--user--meta_date">8/07/2022</div>
+                                </div>
+                            </div>
+                            <div class="news--box--user--text">
+                            TMY Chain Platform Blockchain: Implementation of industry technology standards                            </div>
+                            <a target='_blank' href="https://bitnovosti.com/2022/07/08/platformennyj-blokchejn-tmy-chain-implementatsii-otraslevyh-tehnologicheskih-standartov/" class="btnEl d-inline-flex" role="button">
+                            More detailed                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news--box">
+                            <div class="news--box--user">
+                                <div class="news--box--user--avatar">
+                                    <img src="https://drive.google.com/u/0/uc?id=1HWZWCyb9q2Syu8yGMsUA7IvKscI2gt8t&export=download" alt="">
+                                </div>
+                                <div class="news--box--user--meta">
+                                    <div class="news--box--user--meta_name">HappyCoin News</div>
+                                    <div class="news--box--user--meta_date">1/07/2022</div>
+                                </div>
+                            </div>
+                            <div class="news--box--user--text">
+                            TMY: blockchain matrix (digital clay) for creating virtual products                            </div>
+                            <a target='_blank' href="https://happycoin.club/tmy-blokchejn-matricza-czifrovaya-glina-dlya-sozdaniya-virtualnyh-produktov/" class="btnEl d-inline-flex" role="button">
+                            More detailed                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="Newsletter">
+            <span>Get news about TMY chain among the first, directly to your Email!</span>
+            <div class="input-wrapper">
+                <input type="text" id="email" required>
+                <label for="email">Enter your e-mail</label>
+            </div>
+        </div>-->
+    </div>
+    <div class="sc-content wavevy-bg">
+        <div class="sc-content-inner">
+            <div class="container">
+                <div class="feature-box-item-pb">
+                    <div class="feature-box-item">
+
+
+                        <div class="d-flex justify-content-start">
+                            <div class="title-el pattern-title pattern-title-left flex-shrink-0">
+
+                            TMY WALLET<a name='ecosystem'></a>
+
+                            <svg width="656" height="50" class="pattern-svg" viewBox="0 0 656 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_872_3861" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="656" height="50">
+                                        <rect width="656" height="50" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_872_3861)">
+                                        <rect x="7.09375" y="0.265137" width="60.1927" height="10.0321" transform="rotate(45 7.09375 0.265137)" fill="#F7F8FC" />
+                                        <rect x="120.969" y="7.36084" width="60.1927" height="10.0321" transform="rotate(135 120.969 7.36084)" fill="#F7F8FC" />
+                                        <rect x="42.751" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 42.751 0.266113)" fill="#F7F8FC" />
+                                        <rect x="156.625" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 156.625 7.36035)" fill="#F7F8FC" />
+                                        <rect x="185.376" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 185.376 0.266113)" fill="#F7F8FC" />
+                                        <rect x="192.281" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 192.281 7.36035)" fill="#F7F8FC" />
+                                        <rect x="221.031" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 221.031 0.265625)" fill="#F7F8FC" />
+                                        <rect x="334.912" y="7.35986" width="60.1927" height="10.0321" transform="rotate(135 334.912 7.35986)" fill="#F7F8FC" />
+                                        <rect x="256.693" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 256.693 0.265625)" fill="#F7F8FC" />
+                                        <rect x="370.562" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 370.562 7.36035)" fill="#F7F8FC" />
+                                        <rect x="399.312" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 399.312 0.265625)" fill="#F7F8FC" />
+                                        <rect x="406.22" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 406.22 7.33936)" fill="#F7F8FC" />
+                                        <rect x="434.969" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 434.969 0.245117)" fill="#F7F8FC" />
+                                        <rect x="548.844" y="7.33887" width="60.1927" height="10.0321" transform="rotate(135 548.844 7.33887)" fill="#F7F8FC" />
+                                        <rect x="470.625" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 470.625 0.245117)" fill="#F7F8FC" />
+                                        <rect x="584.5" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 584.5 7.33936)" fill="#F7F8FC" />
+                                        <rect x="613.25" y="-0.108887" width="60.1927" height="10.0321" transform="rotate(45 613.25 -0.108887)" fill="#F7F8FC" />
+                                        <rect x="620.156" y="6.98389" width="60.1927" height="10.0321" transform="rotate(135 620.156 6.98389)" fill="#F7F8FC" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <div class="row flex-md-row flex-column-reverse">
+                            <div class="col-md-5 col-12">
+                                <div class="feature-box-item__img">
+                                    <img src="images/landing/key.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-12">
+                                <div class="feature-box-item-text mb-5">
+                                    <p>The wallet from TMY Chain is created according to the latest existing web standards and is easily integrated with MetaMask and Trust Wallet wallets with Web 3.0 support</p>
+                                    <br>
+                                    <p>The wallet is safe because it does not store personal data and private keys of users.</p>
+                                </div>
+                                <div class="d-flex justify-content-center justify-content-md-start">
+                                    
+                                    <a href="https://wallet.tmychain.org" class="btnEl d-lg-inline-block d-none mr-5" role="button">
+                                    Enter the Wallet TMY                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-box-item-pb">
+                    <div class="feature-box-item">
+                  
+                                             
+                        <div class="d-flex justify-content-end">
+                            <div class="title-el pattern-title pattern-title-right flex-shrink-0">
+
+                            <span class="title-txt">TMY Scanner</span>
+
+                            <svg width="656" height="50" class="pattern-svg" viewBox="0 0 656 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_872_3861" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="656" height="50">
+                                        <rect width="656" height="50" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_872_3861)">
+                                        <rect x="7.09375" y="0.265137" width="60.1927" height="10.0321" transform="rotate(45 7.09375 0.265137)" fill="#F7F8FC" />
+                                        <rect x="120.969" y="7.36084" width="60.1927" height="10.0321" transform="rotate(135 120.969 7.36084)" fill="#F7F8FC" />
+                                        <rect x="42.751" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 42.751 0.266113)" fill="#F7F8FC" />
+                                        <rect x="156.625" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 156.625 7.36035)" fill="#F7F8FC" />
+                                        <rect x="185.376" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 185.376 0.266113)" fill="#F7F8FC" />
+                                        <rect x="192.281" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 192.281 7.36035)" fill="#F7F8FC" />
+                                        <rect x="221.031" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 221.031 0.265625)" fill="#F7F8FC" />
+                                        <rect x="334.912" y="7.35986" width="60.1927" height="10.0321" transform="rotate(135 334.912 7.35986)" fill="#F7F8FC" />
+                                        <rect x="256.693" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 256.693 0.265625)" fill="#F7F8FC" />
+                                        <rect x="370.562" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 370.562 7.36035)" fill="#F7F8FC" />
+                                        <rect x="399.312" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 399.312 0.265625)" fill="#F7F8FC" />
+                                        <rect x="406.22" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 406.22 7.33936)" fill="#F7F8FC" />
+                                        <rect x="434.969" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 434.969 0.245117)" fill="#F7F8FC" />
+                                        <rect x="548.844" y="7.33887" width="60.1927" height="10.0321" transform="rotate(135 548.844 7.33887)" fill="#F7F8FC" />
+                                        <rect x="470.625" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 470.625 0.245117)" fill="#F7F8FC" />
+                                        <rect x="584.5" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 584.5 7.33936)" fill="#F7F8FC" />
+                                        <rect x="613.25" y="-0.108887" width="60.1927" height="10.0321" transform="rotate(45 613.25 -0.108887)" fill="#F7F8FC" />
+                                        <rect x="620.156" y="6.98389" width="60.1927" height="10.0321" transform="rotate(135 620.156 6.98389)" fill="#F7F8FC" />
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+
+                
+                        <div class="row flex-md-row-reverse flex-column-reverse">
+                            <div class="col-md-5 col-12">
+                                <div class="feature-box-item__img">
+                                    <img src="images/landing/scanner.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-12">
+                                <div class="feature-box-item-text mb-5">
+                                    <p>The scanner will allow you to track any route <br> quickly and in LIVE mode <span class="purplehl-text">LIVE</span></p>
+                                    <br>
+                                    <p><span class="purplehl-text">The tool familiar to many becomes the most powerful registry thanks to TMY</span></p>
+                                    <br>
+                                    <p>Transactions, Blocks, Smart Contracts <br> Everything is in the palm of your hand!</p>
+                                </div>
+                                <div class="d-flex justify-content-center justify-content-md-start">
+                                    <a target='_blank' href="https://tmyscan.com" class="btnEl mr-lg-5" role="button">
+                                    Go to the website                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-box-item-pb">
+                    <div class="feature-box-item">
+                        
+                        <div class="d-flex justify-content-start">
+                            <div class="title-el pattern-title pattern-title-left flex-shrink-0">
+
+                                <span class="title-txt">TMY DEX</span>
+
+                            <svg width="656" height="50" class="pattern-svg" viewBox="0 0 656 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_872_3861" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="656" height="50">
+                                        <rect width="656" height="50" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_872_3861)">
+                                        <rect x="7.09375" y="0.265137" width="60.1927" height="10.0321" transform="rotate(45 7.09375 0.265137)" fill="#F7F8FC" />
+                                        <rect x="120.969" y="7.36084" width="60.1927" height="10.0321" transform="rotate(135 120.969 7.36084)" fill="#F7F8FC" />
+                                        <rect x="42.751" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 42.751 0.266113)" fill="#F7F8FC" />
+                                        <rect x="156.625" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 156.625 7.36035)" fill="#F7F8FC" />
+                                        <rect x="185.376" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 185.376 0.266113)" fill="#F7F8FC" />
+                                        <rect x="192.281" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 192.281 7.36035)" fill="#F7F8FC" />
+                                        <rect x="221.031" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 221.031 0.265625)" fill="#F7F8FC" />
+                                        <rect x="334.912" y="7.35986" width="60.1927" height="10.0321" transform="rotate(135 334.912 7.35986)" fill="#F7F8FC" />
+                                        <rect x="256.693" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 256.693 0.265625)" fill="#F7F8FC" />
+                                        <rect x="370.562" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 370.562 7.36035)" fill="#F7F8FC" />
+                                        <rect x="399.312" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 399.312 0.265625)" fill="#F7F8FC" />
+                                        <rect x="406.22" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 406.22 7.33936)" fill="#F7F8FC" />
+                                        <rect x="434.969" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 434.969 0.245117)" fill="#F7F8FC" />
+                                        <rect x="548.844" y="7.33887" width="60.1927" height="10.0321" transform="rotate(135 548.844 7.33887)" fill="#F7F8FC" />
+                                        <rect x="470.625" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 470.625 0.245117)" fill="#F7F8FC" />
+                                        <rect x="584.5" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 584.5 7.33936)" fill="#F7F8FC" />
+                                        <rect x="613.25" y="-0.108887" width="60.1927" height="10.0321" transform="rotate(45 613.25 -0.108887)" fill="#F7F8FC" />
+                                        <rect x="620.156" y="6.98389" width="60.1927" height="10.0321" transform="rotate(135 620.156 6.98389)" fill="#F7F8FC" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <div class="row flex-md-row flex-column-reverse">
+                            <div class="col-md-5 col-12">
+                                <div class="feature-box-item__img">
+                                    <img src="images/landing/dex.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-12">
+                                <div class="feature-box-item-text mb-5">
+                                    <p>The decentralized exchange TMY DEX is a platform in the field of decentralized finance (DeFi), operating on the basis of the TMY Chain network. </p>
+                                    <br>
+                                    <p>It is completely independent of external factors, any interference and is controlled automatically by Smart Contracts on Web 3.0</p>
+                                </div>
+                                <div class="d-flex justify-content-center justify-content-md-start">
+                                    <a href="javascript:;" class="btnEl mr-lg-5" role="button">
+                                    Go to the website                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-box-item-pb pb-0">
+                    <div class="feature-box-item">
+                        
+                        
+                        <div class="d-flex justify-content-end">
+                            <div class="title-el pattern-title pattern-title-right flex-shrink-0">
+
+                                <span class="title-txt">TMY CHAIN</span>
+
+                            <svg width="656" height="50" class="pattern-svg" viewBox="0 0 656 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_872_3861" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="656" height="50">
+                                        <rect width="656" height="50" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_872_3861)">
+                                        <rect x="7.09375" y="0.265137" width="60.1927" height="10.0321" transform="rotate(45 7.09375 0.265137)" fill="#F7F8FC" />
+                                        <rect x="120.969" y="7.36084" width="60.1927" height="10.0321" transform="rotate(135 120.969 7.36084)" fill="#F7F8FC" />
+                                        <rect x="42.751" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 42.751 0.266113)" fill="#F7F8FC" />
+                                        <rect x="156.625" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 156.625 7.36035)" fill="#F7F8FC" />
+                                        <rect x="185.376" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 185.376 0.266113)" fill="#F7F8FC" />
+                                        <rect x="192.281" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 192.281 7.36035)" fill="#F7F8FC" />
+                                        <rect x="221.031" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 221.031 0.265625)" fill="#F7F8FC" />
+                                        <rect x="334.912" y="7.35986" width="60.1927" height="10.0321" transform="rotate(135 334.912 7.35986)" fill="#F7F8FC" />
+                                        <rect x="256.693" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 256.693 0.265625)" fill="#F7F8FC" />
+                                        <rect x="370.562" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 370.562 7.36035)" fill="#F7F8FC" />
+                                        <rect x="399.312" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 399.312 0.265625)" fill="#F7F8FC" />
+                                        <rect x="406.22" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 406.22 7.33936)" fill="#F7F8FC" />
+                                        <rect x="434.969" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 434.969 0.245117)" fill="#F7F8FC" />
+                                        <rect x="548.844" y="7.33887" width="60.1927" height="10.0321" transform="rotate(135 548.844 7.33887)" fill="#F7F8FC" />
+                                        <rect x="470.625" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 470.625 0.245117)" fill="#F7F8FC" />
+                                        <rect x="584.5" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 584.5 7.33936)" fill="#F7F8FC" />
+                                        <rect x="613.25" y="-0.108887" width="60.1927" height="10.0321" transform="rotate(45 613.25 -0.108887)" fill="#F7F8FC" />
+                                        <rect x="620.156" y="6.98389" width="60.1927" height="10.0321" transform="rotate(135 620.156 6.98389)" fill="#F7F8FC" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="row flex-md-row-reverse flex-column-reverse">
+                            <div class="col-md-5 col-12">
+                                <div class="feature-box-item__img">
+                                    <img src="images/landing/chain.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-12">
+                                <div class="feature-box-item-text mb-5">
+                                    <p>A new generation blockchain network using the TTS20 token standard (compatible with ERC20, BEP20, TRC20, etc.). TMY chain is capable of instantly processing up to 76 transactions per second with minimal fees</p>
+                                    <br>
+                                    <p>Web 3.0 is closer than you thought.</p>
+                                </div>
+                                <!-- <div class="d-flex justify-content-center justify-content-md-start">
+                                    <a href="javascript:;" class="btnEl mr-lg-5" role="button">
+                                    Go to the website                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sc-content pattern-pseudo-right">
+        <div class="container">
+
+               <div class="d-flex mb25">
+                   <div class="title-el pattern-title pattern-title-left flex-shrink-0">
+
+                   QUESTION - ANSWER
+                   <svg width="656" height="50" class="pattern-svg" viewBox="0 0 656 50" fill="none" xmlns="http://www.w3.org/2000/svg"> <mask id="mask0_911_4061" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="656" height="50"> <rect width="656" height="50" fill="#D9D9D9"/> </mask> <g mask="url(#mask0_911_4061)"> <rect x="7.09375" y="0.265137" width="60.1927" height="10.0321" transform="rotate(45 7.09375 0.265137)" fill="#F7F8FC"/> <rect x="120.969" y="7.36084" width="60.1927" height="10.0321" transform="rotate(135 120.969 7.36084)" fill="#F7F8FC"/> <rect x="42.751" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 42.751 0.266113)" fill="#F7F8FC"/> <rect x="156.625" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 156.625 7.36035)" fill="#F7F8FC"/> <rect x="185.376" y="0.266113" width="60.1927" height="10.0321" transform="rotate(45 185.376 0.266113)" fill="#F7F8FC"/> <rect x="192.281" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 192.281 7.36035)" fill="#F7F8FC"/> <rect x="221.031" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 221.031 0.265625)" fill="#F7F8FC"/> <rect x="334.912" y="7.35986" width="60.1927" height="10.0321" transform="rotate(135 334.912 7.35986)" fill="#F7F8FC"/> <rect x="256.692" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 256.692 0.265625)" fill="#F7F8FC"/> <rect x="370.563" y="7.36035" width="60.1927" height="10.0321" transform="rotate(135 370.563 7.36035)" fill="#F7F8FC"/> <rect x="399.313" y="0.265625" width="60.1927" height="10.0321" transform="rotate(45 399.313 0.265625)" fill="#F7F8FC"/> <rect x="406.221" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 406.221 7.33936)" fill="#F7F8FC"/> <rect x="434.97" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 434.97 0.245117)" fill="#F7F8FC"/> <rect x="548.845" y="7.33887" width="60.1927" height="10.0321" transform="rotate(135 548.845 7.33887)" fill="#F7F8FC"/> <rect x="470.626" y="0.245117" width="60.1927" height="10.0321" transform="rotate(45 470.626 0.245117)" fill="#F7F8FC"/> <rect x="584.501" y="7.33936" width="60.1927" height="10.0321" transform="rotate(135 584.501 7.33936)" fill="#F7F8FC"/> <rect x="613.251" y="-0.108887" width="60.1927" height="10.0321" transform="rotate(45 613.251 -0.108887)" fill="#F7F8FC"/> <rect x="620.157" y="6.98389" width="60.1927" height="10.0321" transform="rotate(135 620.157 6.98389)" fill="#F7F8FC"/> </g> </svg>
+
+                   </div>
+               </div>
+
+               
+           
+            <div class="faq-wrapper">
+                <div class="faq-tab-item">
+                    <div class="faq-tab-item-heading">
+                    1. Are TMY Chain compatible with other blockchain networks?                    </div>
+                    <div class="faq-tab-item-content">
+                    TMY Chain is compatible with all systems similar to Ethereum and WEB 3.0 solutions. TMY chain smart contracts are compatible with all popular blockchain networks, such as BNB Chain, Tron, Ethereum, Phantom, Avalanche, Polygon, etc. based on the Solidity language.                    </div>
+                </div>
+                <div class="faq-tab-item">
+                    <div class="faq-tab-item-heading">
+                    2. Is there mining in the TMY chain?                    </div>
+                    <div class="faq-tab-item-content">
+                    There is no environmentally harmful PoW (Proof of Work) solution in the TMY Chain consensus, and the network performance is ensured thanks to validators and PoA (Proof of Authority) technology.                    </div>
+                </div>
+                <div class="faq-tab-item">
+                    <div class="faq-tab-item-heading">
+                    3. What is the standard of tokens in the TMY Chain network?                    </div>
+                    <div class="faq-tab-item-content">
+                    TMY Chain works as a platform for creating many other tokens of the TTS-20 standard (compatible with ERC20, BEP20, TRC20, etc.).                    </div>
+                </div>
+                <div class="faq-tab-item">
+                    <div class="faq-tab-item-heading">
+                    4. What is the bandwidth of the TMY Chain?                    </div>
+                    <div class="faq-tab-item-content">
+                    Thanks to the PoA-based system architecture and the white list of trusted nodes (validators), TMY Chain generates a block every 5-10 seconds, which is a high result compared to existing systems, thereby ensuring high network throughput.                    </div>
+                </div>
+                <div class="faq-tab-item">
+                    <div class="faq-tab-item-heading">
+                    5. What is the commission for TMY Chain?                    </div>
+                    <div class="faq-tab-item-content">
+                    Issue 12,000,000 TMY                    </div>
+                </div>
+                <div class="faq-tab-item">
+                    <div class="faq-tab-item-heading">
+                    6. What services are there in the TMY Chain ecosystem?                    </div>
+                    <div class="faq-tab-item-content">
+                        
+                    To date, the TMY Chain ecosystem consists of a number of services, the list of which will be supplemented according to the roadmap. Already available:<ul>
+   
+<ol>1. Landing page with information about the TMY Chain ecosystem - tmychain.org</ol>
+<ol>2. TMY Scanner (Block Browser) - tmyscan.com</ol>
+<ol>3. WEB 3.0 Wallet - wallet.tmychain.org</ol>
+    </ul>
+    <br />
+    
+    In development:    <ul>
+<ol>1. TMY DEX</ol>
+<ol>2. NFT Marketplace</ol>
+<ol>3. GameFi Platform</ol>
+<ol>3. DeFi Accelerator</ol>
+    </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="footer-wrap-social">
+                        <div class="footer-heading-el">TMY Chain Social Networks</div>
+                        <div class="footer-txt">
+                        Subscribe to us on social networks and follow the news.                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a name='contacts' target='_blank' href="https://t.me/TMYchain" class="social-links_item"><i class="sprite sprite-tg"></i></a>
+                        <a target='_blank' href="https://t.me/TMYchain_rus" class="social-links_item"><i class="sprite sprite-tg"></i></a>
+                        
+                        <a target='_blank' href="https://discord.gg/EQHqDab8Mj" class="social-links_item"><i class="sprite sprite-discord"></i></a>
+                        <a target='_blank' href="https://www.instagram.com/tmychain" class="social-links_item"><i class="sprite sprite-ig"></i></a>
+                        <a target='_blank' href="https://www.facebook.com/TMY-chain" class="social-links_item"><i class="sprite sprite-meta"></i></a>
+                        <a target='_blank' href="https://twitter.com/TMYchain" class="social-links_item"><i class="sprite sprite-tw"></i></a>
+                        <a target='_blank' href="https://vk.com/tmychain" class="social-links_item"><i class="sprite sprite-vk"></i></a>
+                        <a target='_blank' href="https://www.youtube.com/channel/UCxlWD0LpgIP-5z17KRtO1SA" class="social-links_item"><i class="sprite sprite-yt"></i></a>
+                        <a target='_blank' href="https://github.com/tothemoney/tmy" class="social-links_item"><i class="sprite sprite-git"></i></a>
+                    </div>
+
+                    <div class="mt-4 mb-4">
+                        <div class="footer-heading-el">Contact</div>
+                        <div class="add-contact-link">Team: <a href="/cdn-cgi/l/email-protection#0a7e6f6b674a7e677369626b63642465786d"><span class="__cf_email__" data-cfemail="473322262a07332a3e242f262e2969283520">[email&#160;protected]</span></a></div>
+                        <div class="add-contact-link">Media: <a href="/cdn-cgi/l/email-protection#3b565e5f525a7b4f564258535a52551554495c"><span class="__cf_email__" data-cfemail="09646c6d6068497d64706a6168606727667b6e">[email&#160;protected]</span></a></div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-sm-4 col-12">
+                            <div class="footer-heading-el mb-3">Development</div>
+                            <nav>
+                                <ul>
+                                    <li><a target='_blank' href="https://drive.google.com/drive/folders/1_0JFxV1FSWDvAVZlmlA50nAFDgZsIyLN?usp=sharing">Documents</a></li>
+                                    <li><a target='_blank' href="https://github.com/tothemoney/tmy">GitHub</a></li>
+                                    <li><a target='_blank' href="https://discord.gg/EQHqDab8Mj">Discord</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-sm-4 col-12">
+                            <div class="footer-heading-el mb-3">Resources</div>
+                            <nav>
+                                <ul>
+                                    <li><a href="https://wallet.tmychain.org">Wallet</a></li>
+                                    <li><a target='_blank' href="https://tmyscan.com">Scanner</a></li>
+                                    <li><a href="#news">News</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-sm-4 col-12">
+                            <div class="footer-heading-el mb-3">Participate</div>
+                            <nav>
+                                <ul>
+                                    <li><a href="#ecosystem">TMY Chain Ecosystem</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-btm">
+        <div class="container">
+            <!--<div class="header-section_top-area d-lg-flex justify-content-between align-items-center">
+                <div class="top_links">
+                    <a href="#" class="activeTopNav">Главная</a>
+                    <a href="#">Обратная связь</a>
+                    <a href="#">Медиа</a>
+                </div>
+                <div class="top_marketInfo-toolbar d-flex align-items-center">
+                    <div class="top_marketInfo_item mr19">Капитализация: <span>170$ или 11 220₽</span></div>
+                    <div class="top_marketInfo_item mr57">Капитализация: <span>170$ или 11 220₽</span></div>
+                    <div class="dropdown-element dropdown-element-lang">
+                        <a href="#">in English</a>
+                        <ul>
+                            <li><a href="#">in English</a></li>
+                            <li><a href="#">in Russian</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <a href="#top" class="scrollUp btnEl"><svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 14L4.5 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8 4.5L4.5 1L1 4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg> </a>
+    <!-- SCRIPTS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+    <script type='module' src="js/chain.js?r=1" defer></script>
+
+    <script src="js/common.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        const swiper = new Swiper('.tmy-news-slider', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                prevEl: '.cstm-control-btn-prev',
+                nextEl: '.cstm-control-btn-next'
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.2,
+
+                },
+                576: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+
+                }
+            }
+        });
+
+
+        $('.responsive_menu .dropdown-element > a').click(function(){
+            $(this).next().slideToggle();
+        });
+
+        $('.rp-menu-btn,.closeBtn').click(function(){
+            $('.responsive_menu').toggleClass('--opened');
+        });
+      
+
+        const breakpoint = window.matchMedia('(min-width:991px)');
+        let mySwiper;
+        const breakpointChecker = function() {
+            if (breakpoint.matches === true) {
+                if (mySwiper !== undefined) mySwiper.destroy(true, true);
+                return;
+            } else if (breakpoint.matches === false) {
+                return enableSwiper();
+            }
+        };
+
+        const enableSwiper = function() {
+            mySwiper = new Swiper('.tmy-stat-boxes', {
+                loop: true,
+                slidesPerView: 1.5,
+                spaceBetween: 15,
+                centeredSlides: true,
+                grabCursor: true,
+                paginationClickable: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.2,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                    },
+                    767: {
+                        slidesPerView: 3,
+
+                    }
+                }
+            });
+
+        };
+
+        breakpoint.addListener(breakpointChecker);
+        breakpointChecker();
+
+
+
+        $('.faq-tab-item-heading').click(function() {
+            $('.faq-tab-item-active').removeClass('faq-tab-item-active');
+            $(".faq-tab-item-content").slideUp('fast');
+            $(this).next().slideToggle('fast');
+            $(this).parent().toggleClass('faq-tab-item-active');
+        });
+
+        $('.scrollUp[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 500, 'linear');
+        });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 450) {
+                $('.scrollUp').css('visibility', 'visible');
+            } else {
+                $('.scrollUp').css('visibility', 'hidden');
+            }
+        });
+
+
+
+    });
+    </script>
+</body>
+
+</html>
