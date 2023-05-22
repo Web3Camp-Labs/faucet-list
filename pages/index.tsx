@@ -181,11 +181,11 @@ export default function  Home<NextPage>() {
     useEffect(()=>{
 
         if(!keyword.length){
-            let arrAft = ResultJson.sort(compareDESC);
+            let arrAft = ResultJson.sort(compareDESC as any);
             setList(arrAft)
         }else{
             const arr = ResultJson.filter((item)=>item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1);
-            let arrAft = arr.sort(compareDESC);
+            let arrAft = arr.sort(compareDESC as any);
             console.log(arrAft)
             setList(arrAft)
         }
