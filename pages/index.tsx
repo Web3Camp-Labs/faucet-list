@@ -1,4 +1,4 @@
-import React, {ReactNode, useEffect, useState} from "react";
+import React, {ChangeEvent, ReactNode, useEffect, useState} from "react";
 import styled from "styled-components";
 import {Button} from "react-bootstrap";
 
@@ -103,6 +103,20 @@ const BtmUl = styled.ul`
       }
     }
 `
+const SearchBox = styled.div`
+  border: 2px solid #EDEFF0;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  width: 66%;
+`
+
+const Tips = styled.div`
+    margin-bottom: 20px;
+  padding-left: 20px;
+`
 
 
 interface objProps{
@@ -112,8 +126,9 @@ interface objProps{
 }
 
 export default function  Home<NextPage>() {
-    const [list,setList] = useState<objProps[]>([]);
+    const [list,setList] = useState<any[]>([]);
     const [account,setAccount] = useState('');
+    const [keyword,setKeyword] = useState('');
 
     useEffect(()=>{
         let acc = sessionStorage.getItem('account');
@@ -123,20 +138,22 @@ export default function  Home<NextPage>() {
 
 
     useEffect(()=>{
-        const compareDESC = function (obj1:objProps, obj2:objProps) {
-            const val1 = obj1.name;
-            const val2 = obj2.name;
-            if (val1 < val2) {
-                return -1;
-            } else if (val1 > val2) {
-                return 1;
-            } else {
-                return 0;
-            }
-        }
-        let arr = faucetList.sort(compareDESC);
+
+        let arr = ResultJson.sort(compareDESC);
         setList(arr)
     },[])
+
+    const compareDESC = function (obj1:objProps, obj2:objProps) {
+        const val1 = obj1.name;
+        const val2 = obj2.name;
+        if (val1 < val2) {
+            return -1;
+        } else if (val1 > val2) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 
     const switchStr = (str:string) =>{
         let domain = str?.split("://")[1];
@@ -152,9 +169,7 @@ export default function  Home<NextPage>() {
 
     }
     const formatImg = (num:number) =>{
-        console.log(num)
-        const rt = ImageArr.filter((item)=>item.split(".")[0] === num.toString() )
-        console.log(rt)
+        const rt = ImageArr.filter((item)=>item.split(".")[0] === num?.toString() )
         if(rt.length){
             return `/faucet-list/icons/${rt[0]}`
         }else{
@@ -163,8 +178,33 @@ export default function  Home<NextPage>() {
 
     }
 
+    useEffect(()=>{
+
+        if(!keyword.length){
+            let arrAft = ResultJson.sort(compareDESC);
+            setList(arrAft)
+        }else{
+            const arr = ResultJson.filter((item)=>item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1);
+            let arrAft = arr.sort(compareDESC);
+            console.log(arrAft)
+            setList(arrAft)
+        }
+
+
+    },[keyword])
+
+    const handleInput = (e:ChangeEvent) => {
+        const { value } = e.target as HTMLInputElement;
+        setKeyword(value)
+    };
+
   return (<>
 
+          <SearchBox>
+              <input type="text" value={keyword} onChange={handleInput} />
+
+          </SearchBox>
+          <Tips>Search results with {keyword}</Tips>
           <ListBox>
           <ul>
               {/*{*/}
@@ -178,7 +218,7 @@ export default function  Home<NextPage>() {
               {/*    </li>))*/}
               {/*}*/}
               {
-                  ResultJson.map((item,index)=>(
+                  list.map((item,index)=>(
                       <li key={`rt_${index}`}>
                           <FlexLine>
                               {/*<img src={item.image?'/faucet-list'+item.image:"/faucet-list/images/eth.png"} alt=""/>*/}
@@ -195,7 +235,7 @@ export default function  Home<NextPage>() {
 
                           <BtmUl>
                               {
-                                  item.faucets.map((innerItem,index)=>(<div key={`innerItem_${index}`}><a href={formatLink(innerItem)} target="_blank" rel="noreferrer">{switchStr(innerItem)}</a></div>))
+                                  item.faucets?.map((innerItem,index)=>(<div key={`innerItem_${index}`}><a href={formatLink(innerItem)} target="_blank" rel="noreferrer">{switchStr(innerItem)}</a></div>))
                               }
                           </BtmUl>
 
