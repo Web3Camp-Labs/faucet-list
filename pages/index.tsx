@@ -42,6 +42,9 @@ const ListBox = styled.div`
         border-radius: 20px;
         border: 2px solid #EDEFF0;
     }
+    &:last-child:nth-child(3n - 1) {
+      margin-right: 34%;
+    }
   }
   .title{
     //padding: 20px;
