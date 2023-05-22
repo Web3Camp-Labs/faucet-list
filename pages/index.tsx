@@ -214,7 +214,7 @@ export default function  Home<NextPage>() {
   return (<>
 
           <SearchBox>
-              <img src="/images/search.svg" alt=""/>
+              <img src="/faucet-list/images/search.svg" alt=""/>
               <input type="text" value={keyword} onChange={handleInput} />
           </SearchBox>
           <Tips>Search results with {keyword}</Tips>
