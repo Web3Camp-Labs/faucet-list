@@ -6,6 +6,7 @@ import Layout from "./layout/layout";
 import faucetList from '../public/list.json';
 import ResultJson from "../public/result.json";
 import ImageArr from "../public/icons/imageArr.json";
+import SearchImg from "../public/images/search.svg";
 
 
 const ListBox = styled.div`
@@ -111,6 +112,19 @@ const SearchBox = styled.div`
   box-sizing: border-box;
   padding: 10px 20px;
   width: 66%;
+  display: flex;
+  align-content: center;
+  input{
+    border: 0;
+    flex-grow: 1;
+    margin-left: 10px;
+    &:focus{
+      outline: none;
+    }
+  }
+  img{
+    
+  }
 `
 
 const Tips = styled.div`
@@ -200,8 +214,8 @@ export default function  Home<NextPage>() {
   return (<>
 
           <SearchBox>
+              <img src="/images/search.svg" alt=""/>
               <input type="text" value={keyword} onChange={handleInput} />
-
           </SearchBox>
           <Tips>Search results with {keyword}</Tips>
           <ListBox>
