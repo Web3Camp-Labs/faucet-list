@@ -139,7 +139,7 @@ export default function  Home<NextPage>() {
 
     useEffect(()=>{
 
-        let arr = ResultJson.sort(compareDESC);
+        let arr = ResultJson.sort(compareDESC as any);
         setList(arr)
     },[])
 
@@ -186,7 +186,6 @@ export default function  Home<NextPage>() {
         }else{
             const arr = ResultJson.filter((item)=>item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1);
             let arrAft = arr.sort(compareDESC as any);
-            console.log(arrAft)
             setList(arrAft)
         }
 
