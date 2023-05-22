@@ -234,7 +234,7 @@ export default function  Home<NextPage>() {
 
                           <BtmUl>
                               {
-                                  item.faucets?.map((innerItem,index)=>(<div key={`innerItem_${index}`}><a href={formatLink(innerItem)} target="_blank" rel="noreferrer">{switchStr(innerItem)}</a></div>))
+                                  item.faucets?.map((innerItem:string,index:number)=>(<div key={`innerItem_${index}`}><a href={formatLink(innerItem)} target="_blank" rel="noreferrer">{switchStr(innerItem)}</a></div>))
                               }
                           </BtmUl>
 
