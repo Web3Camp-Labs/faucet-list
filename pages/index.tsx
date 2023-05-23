@@ -122,9 +122,7 @@ const SearchBox = styled.div`
       outline: none;
     }
   }
-  img{
-    
-  }
+  
 `
 
 const Tips = styled.div`
@@ -217,7 +215,10 @@ export default function  Home<NextPage>() {
               <img src="/faucet-list/images/search.svg" alt=""/>
               <input type="text" value={keyword} onChange={handleInput} />
           </SearchBox>
-          <Tips>Search results with {keyword}</Tips>
+          {
+              !!keyword.length && <Tips>Search results with {keyword}</Tips>
+          }
+
           <ListBox>
           <ul>
               {/*{*/}
